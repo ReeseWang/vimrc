@@ -50,3 +50,9 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Font and appeariance
+syntax enable
+set guifont=Source\ Code\ Pro\ Medium\ 11 
+set background=dark
+colorscheme solarized
