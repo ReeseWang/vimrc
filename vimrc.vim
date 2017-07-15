@@ -56,3 +56,6 @@ syntax enable
 set guifont=Source\ Code\ Pro\ Medium\ 11 
 set background=dark
 colorscheme solarized
+
+set exrc " Execture .vimrc in working directory
+set guioptions-=T " Remove toolbar
