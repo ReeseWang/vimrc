@@ -36,6 +36,7 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'valloric/youcompleteme'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'tpope/vim-ragtag'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
