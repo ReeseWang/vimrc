@@ -61,3 +61,6 @@ colorscheme solarized
 
 set exrc " Execture .vimrc in working directory
 set guioptions-=T " Remove toolbar
+
+" <leader>gf to open file under cursor, create the file if nonexistent
+:map <leader>gf :e <cfile><cr>
