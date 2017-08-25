@@ -55,7 +55,13 @@ filetype plugin indent on    " required
 
 " Font and appeariance
 syntax enable
-set guifont=Source\ Code\ Pro\ Medium\ 11 
+if has("gui_running")
+	if has("gui_gtk2")
+		set guifont=Source\ Code\ Pro\ Medium\ 11 
+	elseif has("gui_win32")
+		set guifont=Source_Code_Pro_Medium:h11:cANSI:qDRAFT
+	endif
+endif
 set background=dark
 colorscheme solarized
 
