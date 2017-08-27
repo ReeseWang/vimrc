@@ -34,9 +34,12 @@ Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'valloric/youcompleteme'
+if has("unix")
+	Plugin 'valloric/youcompleteme'
+endif
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-ragtag'
+Plugin 'gregjurman/vim-nc'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
