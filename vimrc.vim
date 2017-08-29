@@ -34,10 +34,13 @@ Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'valloric/youcompleteme'
+if has("unix")
+	Plugin 'valloric/youcompleteme'
+endif
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-ragtag'
 Plugin 'Rename'
+Plugin 'gregjurman/vim-nc'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,7 +59,13 @@ filetype plugin indent on    " required
 
 " Font and appeariance
 syntax enable
-set guifont=Source\ Code\ Pro\ Medium\ 11 
+if has("gui_running")
+	if has("gui_gtk2")
+		set guifont=Source\ Code\ Pro\ Medium\ 11 
+	elseif has("gui_win32")
+		set guifont=Source_Code_Pro_Medium:h11:cANSI:qDRAFT
+	endif
+endif
 set background=dark
 colorscheme solarized
 
