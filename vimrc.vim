@@ -41,6 +41,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-ragtag'
 Plugin 'Rename'
 Plugin 'gregjurman/vim-nc'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
