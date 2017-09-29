@@ -79,3 +79,6 @@ set guioptions-=T " Remove toolbar
 
 " python-mode related settings
 runtime python-mode.vim
+
+" Type ,cd to change working directory to current file and show pwd
+nnoremap ,cd :lcd %:p:h<CR>:pwd<CR>
