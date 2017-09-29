@@ -42,6 +42,7 @@ Plugin 'tpope/vim-ragtag'
 Plugin 'Rename'
 Plugin 'gregjurman/vim-nc'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -75,3 +76,6 @@ set guioptions-=T " Remove toolbar
 
 " <leader>gf to open file under cursor, create the file if nonexistent
 :map <leader>gf :e <cfile><cr>
+
+" python-mode related settings
+runtime python-mode.vim
