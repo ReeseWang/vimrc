@@ -43,6 +43,7 @@ Plugin 'Rename'
 Plugin 'gregjurman/vim-nc'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'klen/python-mode'
+Plugin 'SQLUtilities'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
