@@ -44,6 +44,7 @@ Plugin 'gregjurman/vim-nc'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'klen/python-mode'
 Plugin 'SQLUtilities'
+Plugin 'Align'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
