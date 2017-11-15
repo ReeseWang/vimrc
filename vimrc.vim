@@ -46,6 +46,8 @@ Plugin 'klen/python-mode'
 Plugin 'SQLUtilities'
 Plugin 'Align'
 Plugin 'wolfgangmehner/matlab-support'
+Plugin 'MatlabFilesEdition'
+Plugin 'matchit.zip'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
