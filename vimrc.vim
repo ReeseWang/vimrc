@@ -45,6 +45,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'klen/python-mode'
 Plugin 'SQLUtilities'
 Plugin 'Align'
+Plugin 'wolfgangmehner/matlab-support'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -87,3 +88,6 @@ nnoremap ,cd :lcd %:p:h<CR>:pwd<CR>
 
 " syntastic related settings
 runtime ./syntastic.vim
+
+" matlab-support related settings
+runtime ./matlab-support.vim
