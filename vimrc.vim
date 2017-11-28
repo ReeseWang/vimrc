@@ -103,3 +103,4 @@ runtime ./matlab-support.vim
 runtime ./cscope.vim
 
 " comfortable-motion related settings
+runtime ./commotion.vim
