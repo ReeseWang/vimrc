@@ -104,3 +104,6 @@ runtime ./cscope.vim
 
 " comfortable-motion related settings
 runtime ./commotion.vim
+
+" vim-indent-guides related
+runtime ./indent.vim
