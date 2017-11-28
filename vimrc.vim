@@ -48,6 +48,11 @@ Plugin 'Align'
 Plugin 'wolfgangmehner/matlab-support'
 Plugin 'MatlabFilesEdition'
 Plugin 'matchit.zip'
+if has("gui_running")
+	Plugin 'yuttie/comfortable-motion.vim'
+endif
+Plugin 'taglist.vim'
+Plugin 'brookhong/cscope.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,3 +98,8 @@ runtime ./syntastic.vim
 
 " matlab-support related settings
 runtime ./matlab-support.vim
+
+" cscope related settings
+runtime ./cscope.vim
+
+" comfortable-motion related settings
