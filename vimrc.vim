@@ -83,6 +83,8 @@ set background=dark
 
 set exrc " Execture .vimrc in working directory
 set guioptions-=T " Remove toolbar
+set hlsearch " Highlight content which match the search
+set incsearch
 
 " <leader>gf to open file under cursor, create the file if nonexistent
 :map <leader>gf :e <cfile><cr>
