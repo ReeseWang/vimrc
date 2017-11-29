@@ -103,7 +103,9 @@ runtime ./matlab-support.vim
 runtime ./cscope.vim
 
 " comfortable-motion related settings
-runtime ./commotion.vim
+if has("gui_running")
+	runtime ./commotion.vim
+endif
 
 " vim-indent-guides related
 runtime ./indent.vim
