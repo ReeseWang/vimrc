@@ -53,6 +53,8 @@ if has("gui_running")
 endif
 Plugin 'taglist.vim'
 Plugin 'brookhong/cscope.vim'
+Plugin 'fatih/vim-go'
+Plugin 'lervag/vimtex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
