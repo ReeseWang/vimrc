@@ -77,8 +77,8 @@ if has("gui_running")
 	elseif has("gui_win32")
 		set guifont=Source_Code_Pro_Medium:h11:cANSI:qDRAFT
 	endif
-	colorscheme solarized
 endif
+colorscheme solarized
 set background=dark
 
 set exrc " Execture .vimrc in working directory
