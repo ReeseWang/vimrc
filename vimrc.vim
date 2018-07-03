@@ -56,6 +56,7 @@ Plugin 'brookhong/cscope.vim'
 Plugin 'fatih/vim-go'
 Plugin 'lervag/vimtex'
 Plugin 'gauteh/vim-evince-synctex'
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
