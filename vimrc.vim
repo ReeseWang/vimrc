@@ -55,6 +55,7 @@ Plugin 'taglist.vim'
 Plugin 'brookhong/cscope.vim'
 Plugin 'fatih/vim-go'
 Plugin 'lervag/vimtex'
+Plugin 'gauteh/vim-evince-synctex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -115,3 +116,9 @@ endif
 
 " vim-indent-guides related
 runtime ./indent.vim
+
+" Vimtex-evince forward/backward search
+runtime ./vim-evince-synctex.vim
+
+" vimtex related
+runtime ./vimtex.vim
