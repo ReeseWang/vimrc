@@ -57,6 +57,8 @@ Plugin 'fatih/vim-go'
 Plugin 'lervag/vimtex'
 Plugin 'gauteh/vim-evince-synctex'
 Plugin 'pangloss/vim-javascript'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
