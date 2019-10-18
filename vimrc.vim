@@ -78,13 +78,13 @@ filetype plugin indent on    " required
 " Font and appeariance
 syntax enable
 if has("gui_running")
+	colorscheme solarized
 	if has("gui_gtk2") || has("gui_gtk3")
 		set guifont=Source\ Code\ Pro\ Medium\ 11 
 	elseif has("gui_win32")
 		set guifont=Source_Code_Pro_Medium:h11:cANSI:qDRAFT
 	endif
 endif
-colorscheme solarized
 set background=dark
 
 set exrc " Execture .vimrc in working directory
