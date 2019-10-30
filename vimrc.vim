@@ -95,7 +95,18 @@ set nu
 set showcmd
 
 " <leader>gf to open file under cursor, create the file if nonexistent
-:map <leader>gf :e <cfile><cr>
+" :map <leader>gf :e <cfile><cr>
+
+" To make gf always work like that
+:map gf :e <cfile><CR>
+
+" Ctrl+Shift+V to paste
+:nmap <C-V> "+p
+:imap <C-V> <C-o>"+p
+:cmap <C-V> <C-r>+
+
+" Ctrl+Shift+C in Visual and Select mode to copy
+:vmap <C-C> "+y
 
 " python-mode related settings
 runtime ./python-mode.vim
@@ -125,3 +136,5 @@ runtime ./vim-evince-synctex.vim
 
 " vimtex related
 runtime ./vimtex.vim
+
+let g:ycm_max_diagnostics_to_display=0
