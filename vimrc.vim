@@ -138,4 +138,6 @@ runtime ./vim-evince-synctex.vim
 " vimtex related
 runtime ./vimtex.vim
 
-let g:ycm_max_diagnostics_to_display=0
+" YouCompleteMe related
+runtime ./ycm.vim
+
