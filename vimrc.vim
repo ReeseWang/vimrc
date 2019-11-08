@@ -29,7 +29,7 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
@@ -48,7 +48,7 @@ Plugin 'Align'
 Plugin 'wolfgangmehner/matlab-support'
 Plugin 'MatlabFilesEdition'
 Plugin 'matchit.zip'
-if has("gui_running")
+if has("gui_running") || exists('g:GuiLoaded')
 	Plugin 'yuttie/comfortable-motion.vim'
 endif
 Plugin 'taglist.vim'
@@ -84,6 +84,8 @@ if has("gui_running")
 	elseif has("gui_win32")
 		set guifont=Source_Code_Pro_Medium:h11:cANSI:qDRAFT
 	endif
+elseif has('nvim') && exists('g:GuiLoaded')
+	set guifont=Source\ Code\ Pro\ Medium\ 11 
 endif
 set background=dark
 
@@ -98,15 +100,14 @@ set showcmd
 " :map <leader>gf :e <cfile><cr>
 
 " To make gf always work like that
-:map gf :e <cfile><CR>
+noremap gf :e <cfile><CR>
 
-" Ctrl+Shift+V to paste
-:nmap <C-V> "+p
-:imap <C-V> <C-o>"+p
-:cmap <C-V> <C-r>+
+" Ctrl+V to paste
+inoremap <C-v> <C-o>"+p
+cnoremap <C-v> <C-r>+
 
-" Ctrl+Shift+C in Visual and Select mode to copy
-:vmap <C-C> "+y
+" Ctrl+C in Visual and Select mode to copy
+vnoremap <C-c> "+y
 
 " python-mode related settings
 runtime ./python-mode.vim
@@ -124,7 +125,7 @@ runtime ./matlab-support.vim
 runtime ./cscope.vim
 
 " comfortable-motion related settings
-if has("gui_running")
+if has("gui_running") || exists('g:GuiLoaded')
 	runtime ./commotion.vim
 endif
 
