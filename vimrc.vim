@@ -35,7 +35,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 if has("unix")
-	Plugin 'valloric/youcompleteme'
+	"Plugin 'valloric/youcompleteme'
 endif
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-ragtag'
@@ -59,6 +59,8 @@ Plugin 'gauteh/vim-evince-synctex'
 Plugin 'pangloss/vim-javascript'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'niklasl/vim-rdf'
+Plugin 'neoclide/coc.nvim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -139,5 +141,7 @@ runtime ./vim-evince-synctex.vim
 runtime ./vimtex.vim
 
 " YouCompleteMe related
-runtime ./ycm.vim
+"runtime ./ycm.vim
 
+" coc.nvim related
+runtime ./coc.vim
