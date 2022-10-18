@@ -30,36 +30,36 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
+"Plugin 'tpope/vim-surround'
 "Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
-Plugin 'scrooloose/nerdcommenter'
+"Plugin 'scrooloose/nerdcommenter'
 if has("unix")
 	"Plugin 'valloric/youcompleteme'
 endif
 Plugin 'easymotion/vim-easymotion'
-Plugin 'tpope/vim-ragtag'
+"Plugin 'tpope/vim-ragtag'
 Plugin 'Rename'
-Plugin 'gregjurman/vim-nc'
+"Plugin 'gregjurman/vim-nc'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'klen/python-mode'
-Plugin 'SQLUtilities'
-Plugin 'Align'
-Plugin 'wolfgangmehner/matlab-support'
-Plugin 'MatlabFilesEdition'
-Plugin 'matchit.zip'
+"Plugin 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+"Plugin 'SQLUtilities'
+"Plugin 'Align'
+"Plugin 'wolfgangmehner/matlab-support'
+"Plugin 'MatlabFilesEdition'
+"Plugin 'matchit.zip'
 if has("gui_running") || exists('g:GuiLoaded')
 	Plugin 'yuttie/comfortable-motion.vim'
 endif
-Plugin 'taglist.vim'
-Plugin 'brookhong/cscope.vim'
-Plugin 'fatih/vim-go'
-Plugin 'lervag/vimtex'
-Plugin 'gauteh/vim-evince-synctex'
-Plugin 'pangloss/vim-javascript'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'niklasl/vim-rdf'
+"Plugin 'taglist.vim'
+"Plugin 'brookhong/cscope.vim'
+"Plugin 'fatih/vim-go'
+"Plugin 'lervag/vimtex'
+"Plugin 'gauteh/vim-evince-synctex'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"Plugin 'niklasl/vim-rdf'
 Plugin 'neoclide/coc.nvim'
 
 " All of your Plugins must be added before the following line
@@ -112,19 +112,19 @@ cnoremap <C-v> <C-r>+
 vnoremap <C-c> "+y
 
 " python-mode related settings
-runtime ./python-mode.vim
+"runtime ./python-mode.vim
 
 " Type ,cd to change working directory to current file and show pwd
 nnoremap ,cd :lcd %:p:h<CR>:pwd<CR>
 
 " syntastic related settings
-runtime ./syntastic.vim
+"runtime ./syntastic.vim
 
 " matlab-support related settings
-runtime ./matlab-support.vim
+"runtime ./matlab-support.vim
 
 " cscope related settings
-runtime ./cscope.vim
+"runtime ./cscope.vim
 
 " comfortable-motion related settings
 if has("gui_running") || exists('g:GuiLoaded')
@@ -135,10 +135,10 @@ endif
 runtime ./indent.vim
 
 " Vimtex-evince forward/backward search
-runtime ./vim-evince-synctex.vim
+"runtime ./vim-evince-synctex.vim
 
 " vimtex related
-runtime ./vimtex.vim
+"runtime ./vimtex.vim
 
 " YouCompleteMe related
 "runtime ./ycm.vim
